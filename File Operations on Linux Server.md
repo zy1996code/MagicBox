@@ -1,4 +1,4 @@
-本文设计 cd, ls, pwd, mkdir, rmdir, rm, chmod 等基本操作
+本文涉及 cd, ls, pwd, mkdir, rmdir, rm, chmod 等基本操作
 **cd 指令，在电脑文件中游走**
 
 cd (change Directory），切换文件夹。
@@ -274,3 +274,5 @@ $ chmod [谁][怎么修改] [哪个文件]
 * `r`, `w`, `x` 或者多个权限一起, 比如 `rx`
 * [哪个文件]
 * 施加操作的文件, 可以为多个
+
+
