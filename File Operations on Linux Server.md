@@ -1,19 +1,20 @@
-本文涉及 cd, ls, pwd, mkdir, rmdir, rm, chmod 等基本操作
+本文涉及 cd, ls, pwd, mkdir, rmdir, rm, chmod 等基本操作。
+
 **cd 指令，在电脑文件中游走**
 
 cd (change Directory），切换文件夹。
 
 ➜ ~ pwd \#显示当前路径
 
-/Users/zhangyu
+/Users/zy1996
 
 ➜ ~ cd Documents \#切换文件夹到
 
 ➜ Documents pwd \#绝度路径
 
-/Users/zhangyu/Documents
+/Users/zy1996/Documents
 
-➜ Documents cd /Users/zhangyu/Downloads \#切换到指定的绝对路径
+➜ Documents cd /Users/zy1996/Downloads \#切换到指定的绝对路径
 
 ➜ Downloads \#到啦！
 
@@ -29,15 +30,15 @@ file1 file2 file3 file4 file5
 
 total 0
 
--rw-r--r-- 1 zhangyu staff 0 3 6 11:43 file1
+-rw-r--r-- 1 zy1996 staff 0 3 6 11:43 file1
 
--rw-r--r-- 1 zhangyu staff 0 3 6 11:43 file2
+-rw-r--r-- 1 zy1996 staff 0 3 6 11:43 file2
 
--rw-r--r-- 1 zhangyu staff 0 3 6 11:43 file3
+-rw-r--r-- 1 zy1996 staff 0 3 6 11:43 file3
 
--rw-r--r-- 1 zhangyu staff 0 3 6 11:43 file4
+-rw-r--r-- 1 zy1996 staff 0 3 6 11:43 file4
 
--rw-r--r-- 1 zhangyu staff 0 3 6 11:43 file5
+-rw-r--r-- 1 zy1996 staff 0 3 6 11:43 file5
 
 ➜ Downloads ls -a \#a 是 all 的缩写，展示文件夹下所有的文件，包括隐藏文件
 
@@ -47,15 +48,15 @@ total 0
 
 total 0
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file1
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file1
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file2
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file2
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file3
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file3
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file4
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file4
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file5
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file5
 
 **touch 创建文件(不能创建文件夹，mkdir 用来创建文件夹）**
 
@@ -165,17 +166,17 @@ file1 file3 file6.py folder1 folder2 folder3
 
 total 0
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file1
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file1
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file3
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file3
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:55 file6.py
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:55 file6.py
 
-drwxr-xr-x 6 zhangyu staff 192B 3 6 14:44 folder1
+drwxr-xr-x 6 zy1996 staff 192B 3 6 14:44 folder1
 
-drwxr-xr-x 3 zhangyu staff 96B 3 6 14:46 folder2
+drwxr-xr-x 3 zy1996 staff 96B 3 6 14:46 folder2
 
-drwxr-xr-x 2 zhangyu staff 64B 3 6 15:01 folder3
+drwxr-xr-x 2 zy1996 staff 64B 3 6 15:01 folder3
 
 ➜ Downloads rmdir folder1\#删除文件夹
 
@@ -187,17 +188,17 @@ rmdir: folder1: Directory not empty\#报错不能删，因为文件夹不为空
 
 total 16
 
--rw-r--r--@ 1 zhangyu staff 6.0K 3 6 12:41 .DS\_Store
+-rw-r--r--@ 1 zy1996 staff 6.0K 3 6 12:41 .DS\_Store
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file1
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file1
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file3
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file3
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:55 file6.py
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:55 file6.py
 
-drwxr-xr-x 3 zhangyu staff 96B 3 6 14:46 folder2
+drwxr-xr-x 3 zy1996 staff 96B 3 6 14:46 folder2
 
-drwxr-xr-x 2 zhangyu staff 64B 3 6 15:01 folder3
+drwxr-xr-x 2 zy1996 staff 64B 3 6 15:01 folder3
 
 **文件权限管理 chmod(change mode)**
 
@@ -207,19 +208,19 @@ drwxr-xr-x 2 zhangyu staff 64B 3 6 15:01 folder3
 
 total 16
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file1
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file1
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file3
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file3
 
--rw-r--r-- 1 zhangyu staff 46B 3 6 15:20 file6.py
+-rw-r--r-- 1 zy1996 staff 46B 3 6 15:20 file6.py
 
--rw-r--r-- 1 zhangyu staff 23B 3 6 15:19 file7.py
+-rw-r--r-- 1 zy1996 staff 23B 3 6 15:19 file7.py
 
-drwxr-xr-x 3 zhangyu staff 96B 3 6 14:46 folder2
+drwxr-xr-x 3 zy1996 staff 96B 3 6 14:46 folder2
 
-drwxr-xr-x 3 zhangyu staff 96B 3 6 15:13 folder3
+drwxr-xr-x 3 zy1996 staff 96B 3 6 15:13 folder3
 
-drwxr-xr-x 2 zhangyu staff 64B 3 6 15:23 qutiansong
+drwxr-xr-x 2 zy1996 staff 64B 3 6 15:23 qutiansong
 
 案例：给所有 all 增加 x 权限
 
@@ -229,21 +230,21 @@ drwxr-xr-x 2 zhangyu staff 64B 3 6 15:23 qutiansong
 
 total 64
 
--rwxr-xr-x@ 1 zhangyu staff 23K 3 5 11:00 03-01-02.png
+-rwxr-xr-x@ 1 zy1996 staff 23K 3 5 11:00 03-01-02.png
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file1
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file1
 
--rw-r--r-- 1 zhangyu staff 0B 3 6 11:43 file3
+-rw-r--r-- 1 zy1996 staff 0B 3 6 11:43 file3
 
--rw-r--r-- 1 zhangyu staff 46B 3 6 15:20 file6.py
+-rw-r--r-- 1 zy1996 staff 46B 3 6 15:20 file6.py
 
--rw-r--r-- 1 zhangyu staff 69B 3 6 15:28 file7.py
+-rw-r--r-- 1 zy1996 staff 69B 3 6 15:28 file7.py
 
-drwxr-xr-x 3 zhangyu staff 96B 3 6 14:46 folder2
+drwxr-xr-x 3 zy1996 staff 96B 3 6 14:46 folder2
 
-drwxr-xr-x 3 zhangyu staff 96B 3 6 15:13 folder3
+drwxr-xr-x 3 zy1996 staff 96B 3 6 15:13 folder3
 
-drwxr-xr-x 2 zhangyu staff 64B 3 6 15:23 qutiansong
+drwxr-xr-x 2 zy1996 staff 64B 3 6 15:23 qutiansong
 
 通常的修改形式是
 
@@ -274,5 +275,3 @@ $ chmod [谁][怎么修改] [哪个文件]
 * `r`, `w`, `x` 或者多个权限一起, 比如 `rx`
 * [哪个文件]
 * 施加操作的文件, 可以为多个
-
-
