@@ -1,10 +1,12 @@
 # The Implementation of Bag of Words model.
 
 import numpy as np
+from nltk.corpus import stopwords
 #Step 1: Tokenize a sentence
 def word_extraction(sentence):
     words = sentence.split()
-    cleaned_text = [w.lower() for w in words]
+    stop_words = set(stopwords.words('english'))
+    cleaned_text = [w.lower() for w in words if not w in stop_words]
     return cleaned_text
 #Step 2：Apply tokenization to all sentences
 def tokenize(sentences):
